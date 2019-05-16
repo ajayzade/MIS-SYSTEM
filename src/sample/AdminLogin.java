@@ -186,7 +186,7 @@ public class AdminLogin implements Initializable {
         }
     }
 
-    public void deleteStudent(ActionEvent actionEvent) {
+    public void deleteFaculty(ActionEvent actionEvent) {
         try {
             Class = combo.getValue().toString();
             PreparedStatement preparedStatement = connection.prepareStatement("DELETE from faculty where alloted=?");
@@ -232,7 +232,7 @@ public class AdminLogin implements Initializable {
         }
     }
 
-    public void deleteFaculty(ActionEvent actionEvent) {
+    public void deleteStudent(ActionEvent actionEvent) {
         try {
             id = Integer.parseInt(ID.getText());
             PreparedStatement preparedStatement = connection.prepareStatement("DELETE from Student where roll=?");
